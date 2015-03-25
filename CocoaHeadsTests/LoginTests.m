@@ -1,6 +1,6 @@
 //
-//  CocoaHeadsTests.m
-//  CocoaHeadsTests
+//  LoginTests.m
+//  CocoaHeads
 //
 //  Created by Rodrigo Andrade on 3/24/15.
 //  Copyright (c) 2015 Rodrigo Andrade. All rights reserved.
@@ -10,11 +10,11 @@
 #import <XCTest/XCTest.h>
 #import "Login.h"
 
-@interface CocoaHeadsTests : XCTestCase
+@interface LoginTests : XCTestCase
 
 @end
 
-@implementation CocoaHeadsTests
+@implementation LoginTests
 
 - (void)setUp {
     [super setUp];
@@ -26,16 +26,13 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testLogin {
+    
+    Login *login = [[Login alloc] init];
+    
+    XCTAssertFalse([login loginWithUserName:@"asa" password:@"124"]);
+    
+    XCTAssertTrue([login loginWithUserName:@"rodrigo" password:@"123"]);
+    
 }
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
-
 @end

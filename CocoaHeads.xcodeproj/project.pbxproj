@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A50F3891AC2328C00AB7040 /* CocoaHeadsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A50F3881AC2328C00AB7040 /* CocoaHeadsTests.m */; };
 		4A6C655C1AC225FE0085E96A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C655B1AC225FE0085E96A /* main.m */; };
 		4A6C655F1AC225FE0085E96A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C655E1AC225FE0085E96A /* AppDelegate.m */; };
 		4A6C65621AC225FE0085E96A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C65611AC225FE0085E96A /* ViewController.m */; };
 		4A6C65651AC225FE0085E96A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6C65631AC225FE0085E96A /* Main.storyboard */; };
 		4A6C65671AC225FE0085E96A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6C65661AC225FE0085E96A /* Images.xcassets */; };
 		4A6C656A1AC225FE0085E96A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6C65681AC225FE0085E96A /* LaunchScreen.xib */; };
-		4A6C65761AC225FE0085E96A /* CocoaHeadsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C65751AC225FE0085E96A /* CocoaHeadsTests.m */; };
+		4A6C65821AC226AF0085E96A /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C65811AC226AF0085E96A /* Login.m */; };
+		4A6C65831AC226AF0085E96A /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C65811AC226AF0085E96A /* Login.m */; };
+		4A6C65871AC22B5A0085E96A /* LoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C65861AC22B5A0085E96A /* LoginTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A50F3881AC2328C00AB7040 /* CocoaHeadsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaHeadsTests.m; sourceTree = "<group>"; };
 		4A6C65561AC225FE0085E96A /* CocoaHeads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6C655A1AC225FE0085E96A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A6C655B1AC225FE0085E96A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,7 +43,9 @@
 		4A6C65691AC225FE0085E96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4A6C656F1AC225FE0085E96A /* CocoaHeadsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHeadsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6C65741AC225FE0085E96A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A6C65751AC225FE0085E96A /* CocoaHeadsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaHeadsTests.m; sourceTree = "<group>"; };
+		4A6C65801AC226AF0085E96A /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Login.h; path = Model/Login.h; sourceTree = "<group>"; };
+		4A6C65811AC226AF0085E96A /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Login.m; path = Model/Login.m; sourceTree = "<group>"; };
+		4A6C65861AC22B5A0085E96A /* LoginTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A50F3861AC22FA200AB7040 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C65681AC225FE0085E96A /* LaunchScreen.xib */,
+				4A6C65631AC225FE0085E96A /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4A50F3871AC22FAF00AB7040 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C65601AC225FE0085E96A /* ViewController.h */,
+				4A6C65611AC225FE0085E96A /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		4A6C654D1AC225FE0085E96A = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +105,12 @@
 		4A6C65581AC225FE0085E96A /* CocoaHeads */ = {
 			isa = PBXGroup;
 			children = (
+				4A6C657F1AC226840085E96A /* Model */,
+				4A50F3861AC22FA200AB7040 /* View */,
+				4A50F3871AC22FAF00AB7040 /* Controller */,
 				4A6C655D1AC225FE0085E96A /* AppDelegate.h */,
 				4A6C655E1AC225FE0085E96A /* AppDelegate.m */,
-				4A6C65601AC225FE0085E96A /* ViewController.h */,
-				4A6C65611AC225FE0085E96A /* ViewController.m */,
-				4A6C65631AC225FE0085E96A /* Main.storyboard */,
 				4A6C65661AC225FE0085E96A /* Images.xcassets */,
-				4A6C65681AC225FE0085E96A /* LaunchScreen.xib */,
 				4A6C65591AC225FE0085E96A /* Supporting Files */,
 			);
 			path = CocoaHeads;
@@ -105,7 +128,8 @@
 		4A6C65721AC225FE0085E96A /* CocoaHeadsTests */ = {
 			isa = PBXGroup;
 			children = (
-				4A6C65751AC225FE0085E96A /* CocoaHeadsTests.m */,
+				4A6C65861AC22B5A0085E96A /* LoginTests.m */,
+				4A50F3881AC2328C00AB7040 /* CocoaHeadsTests.m */,
 				4A6C65731AC225FE0085E96A /* Supporting Files */,
 			);
 			path = CocoaHeadsTests;
@@ -117,6 +141,15 @@
 				4A6C65741AC225FE0085E96A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A6C657F1AC226840085E96A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C65801AC226AF0085E96A /* Login.h */,
+				4A6C65811AC226AF0085E96A /* Login.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +255,7 @@
 				4A6C65621AC225FE0085E96A /* ViewController.m in Sources */,
 				4A6C655F1AC225FE0085E96A /* AppDelegate.m in Sources */,
 				4A6C655C1AC225FE0085E96A /* main.m in Sources */,
+				4A6C65821AC226AF0085E96A /* Login.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A6C65761AC225FE0085E96A /* CocoaHeadsTests.m in Sources */,
+				4A6C65871AC22B5A0085E96A /* LoginTests.m in Sources */,
+				4A6C65831AC226AF0085E96A /* Login.m in Sources */,
+				4A50F3891AC2328C00AB7040 /* CocoaHeadsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +448,7 @@
 				4A6C657B1AC225FE0085E96A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A6C657C1AC225FE0085E96A /* Build configuration list for PBXNativeTarget "CocoaHeadsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +457,7 @@
 				4A6C657E1AC225FE0085E96A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

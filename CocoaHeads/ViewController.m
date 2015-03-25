@@ -7,12 +7,36 @@
 //
 
 #import "ViewController.h"
+#import "Login.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+#pragma mark - Methods of Login
+
+- (IBAction)loginButtonPressed:(UIButton *)sender {
+    
+    Login *login = [[Login alloc] init];
+    
+    if ([login loginWithUserName:_txtUserName.text password:_txtPassword.text])
+    {
+        [self performSegueWithIdentifier:@"segueLogin" sender:nil];
+    }
+    else
+    {
+        [self alertWithTitle:@"Fail" message:@"Login or Password invalid!"];
+    }
+}
+
+- (void)alertWithTitle:(NSString *)_alertTitle message:(NSString *)_alertMessage {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:_alertTitle message:_alertMessage delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
+#pragma mark - Methods of this ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
