@@ -1,0 +1,6 @@
+.DS_Store
+Build/
+
+CocoaHeads.xcodeproj/project.xcworkspace/
+CocoaHeads.xcodeproj/xcuserdata/
+CocoaHeads.xcworkspace/
