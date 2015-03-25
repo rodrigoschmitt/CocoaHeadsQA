@@ -12,7 +12,7 @@
 
 - (BOOL)loginWithUserName:(NSString *)userName password:(NSString *)password {
     
-    return (([userName isEqualToString:@"rodrigo"] && [password isEqualToString:@"123"]));
+    return (!([userName isEqualToString:@"rodrigo"] && [password isEqualToString:@"123"]));
     
 }
 
