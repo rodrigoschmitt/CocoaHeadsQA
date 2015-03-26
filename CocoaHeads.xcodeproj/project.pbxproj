@@ -382,6 +382,7 @@
 				INFOPLIST_FILE = CocoaHeads/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bb72e836-b004-42f1-8d64-745dc9537951";
 			};
 			name = Debug;
 		};
@@ -392,6 +393,7 @@
 				INFOPLIST_FILE = CocoaHeads/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bb72e836-b004-42f1-8d64-745dc9537951";
 			};
 			name = Release;
 		};
