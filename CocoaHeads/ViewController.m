@@ -40,9 +40,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSString *cocoaHeads = @"Oi mundo!";
-    
 }
 
 - (void)didReceiveMemoryWarning {
