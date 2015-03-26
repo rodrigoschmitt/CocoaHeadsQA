@@ -2,7 +2,7 @@
 //  LoginTests.m
 //  CocoaHeads
 //
-//  Created by Rodrigo S Andrade on 3/25/15.
+//  Created by Rodrigo S Andrade on 3/26/15.
 //  Copyright (c) 2015 Rodrigo Andrade. All rights reserved.
 //
 
@@ -27,11 +27,13 @@
 }
 
 - (void)testLogin {
+    
     Login *login = [[Login alloc] init];
     
-    XCTAssertFalse([login loginWithUserName:@"aaa" password:@"vvc"]);
+    XCTAssertFalse([login loginWithUserName:@"aaa" password:@"ccc"]);
     
     XCTAssertTrue([login loginWithUserName:@"rodrigo" password:@"123"]);
+    
 }
 
 @end

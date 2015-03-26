@@ -40,6 +40,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString *teste = @"Oi";
 }
 
 - (void)didReceiveMemoryWarning {
