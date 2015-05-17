@@ -3,7 +3,7 @@ Introduction
 
 <b>Sample code with Unit Tests for CocoaHeads' presentation.</b>
 
-Keynote: https://www.dropbox.com/sh/48g9zhzp8tz3dob/AAADif9hjKJ1lId28q_WgHAXa?dl=0
+Keynote: https://speakerdeck.com/rodrigoschmitt/desenvolvimento-ios-com-teste-unitario-e-xcode-server
 
 References
 ------------
